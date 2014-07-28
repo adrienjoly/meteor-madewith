@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
   console.log("[madewith] logging visit...");
-  DDP.connect("http://localhost:3000/").call("addCount", window.location.href, function(err, res){
+  DDP.connect("http://france.meteor.com/").call("addCount", window.location.href, function(err, res){
     console.log("[madewith] result => ", err || res);
     setTimeout(function(){
       var a = document.createElement("a");
